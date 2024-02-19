@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      #centerThis {
         height: 100vh;
         width: 100vw;
         font-size: 20px;
@@ -11,22 +14,23 @@
         background-color: green;
         text-align: center;
         color: white;
-        font-family: "Lucida Console", "Courier New", monospace;
       }
       h1 {
-        font-size: 5em;
+        font-size: 2.5em;
         text-align: center;
       }
       p {
-        font-size: 4em;
+        font-size: 2em;
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Countdown for Micah</h1>
+    <div id="centerThis">
+      <h1>Countdown for Micah</h1>
 
-    <p id="demo"></p>
+      <p id="demo"></p>
+    </div>
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Feb 20, 2024 17:30:00").getTime();
